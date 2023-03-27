@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+nav img{
+    width: 150px;
+  cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.nav-links ul li a:hover {
+    background-color: #1c96e2;
+    color: white;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1c96e2;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li :hover ::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/****
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn :hover {
+    border: 1px solid #d11508;
+    background-color: #d11508;
+    transition: 2s;
+}
+
+*/
+
+.tenny {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.tenny a {
+    text-decoration: none;
+}
+
+.tenny:hover {
+    background-color: #1c96e2;
+    transition: 2s;
+    border: 1px solid #1c96e2;
+}
+nav .fa{
+    display: none;
+}
+@media (max-width: 700px) {
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #1c96e2;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 40px;
+    }
+}
+
+/*------ABOUT US------*/
+
+.ABOUT_US {
+        text-align: center;
+        padding-top: 100px;
+        width: 90vw;
+    max-width: 600px;
+    padding: 2em, 1.5em;
+    margin: 1em auto;
+    border-radius: 0.5em;
+}
+h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.ABOUT_US-col{
+    flex-basis: 50%;
+    background: #1c96e2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.ABOUT_US-col p {
+    color: white;
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.ABOUT_US-col :hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.header2{
+    width: 10%;
+    background-position: inherit;
+    background-size: cover;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*------ PARTNERS------*/
+
+.PARTNERS{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.PARTNERS-col{
+    flex-basis: 10%;
+    background: #1c96e2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.PARTNERS-col :hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.row{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: row;
+    }
+}
+/*-------TEAM UP-------*/
+ 
+ .container{
+    width: 90vw;
+    max-width: 600px;
+    padding: 2em, 1.5em;
+    background-color: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    background-image: image() url(dubai2.jpeg);
+    margin: 1em auto;
+    border-radius: 0.5em;
+ }
+
+ h3{
+    font-size: 1em;
+ }
+ 
+ label, input, textarea {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    align-content: center;
+ }
+ 
+ input[type="submit"]
+ {
+    background-image: none;
+    background-color: #1c96e2;
+    color: #051e2d;
+    padding: 10px 20px;
+    border: #051e2d;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ @media(max-width: 700px){
+    label, input, textarea{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+ }
+ /*-----footer------*/
+
+ .footer{
+    font-size: small;
+    position: static;
+    font-style: normal;
+    background-color: #1c96e2;
+    border: 1em solid;
+    padding: 1em 2em;
+    box-sizing: inherit;
+}
+.header1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(dubai2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text-box1{
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: inherit;
+    padding: 1em 1em;
+    border: 1em solid;
+}
+.text-box1 h1{
+    font-size: 4em;
+}
+.text-box1 p{
+    margin: 1em 0 1em;
+    font-size: 2em;
+    color: #fff;
+}
+.container2{
+    align-content: center;
+    padding-top: 3em;
+    padding-left: 20em;
+    position: relative;
+    border: 1em solid;
+    background-color: #13699e;
+}
+ .container2 h2{ 
+    font-size: 3em;
+}
+.container2 p{
+    font-size: 2em;
+}
+@media (max-width: 700px){
+    
+}

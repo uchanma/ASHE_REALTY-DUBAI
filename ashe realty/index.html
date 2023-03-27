@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHE REALTY</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <!------HOME------->
+
+    <section class="header">
+        <nav>
+            <a href="ashe -realty.html"><img src="ashe realty logo.png.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="PROPERTIES.html">PROPERTIES</a></li>
+                    <li><a href="ABOUTUS.html">ABOUT US</a></li>
+                    <li><a href="PARTNERS.html">PARTNERS</a></li>
+                    <li><a href="Meet_the_team.html">MEET THE TEAM</a></li>
+                    <li><a href="TEAMUP.html">TEAM UP</a></li>
+                    <li><a href="CONTACTUS.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>LUXURY REAL ESTATE- REDEFINED</h1>
+            <p>Find your next home in Dubai</p>
+            <button class="tenny"><a href="PROPERTIES.html">Visit us to know more</a></button>
+        </div>
+    </section>
+    <!------ JavaScript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer class="footer">
+    <p>EMAIL:<a href="EMAIL">info.asherealty@gmail.com</a></p>
+    <p>TELEPHONE:<a href="TELEPHONE">: +971556637012, +971528236996</a></p>
+    <p>ADDRESS:<a href="ADDRESS">The BinaryTower, B4Q3, Business Bay, Dubai, UAE</a></p>
+    <p><a href="index.html">HOME</a></p>
+    <p><a href="PROPERTIES.html">PROPERTIES</a></p>
+    <p><a href="ABOUTUS.html">ABOUT US</a></p>
+    <p><a href="PARTNERS.html">PARTNERS</a></p>
+    <p><a href="Meet_the_team.html">MEET THE TEAM</a></p>
+    <p><a href="TEAMUP.html">TEAM UP</a></p>
+    <p><a href="CONTACTUS.html">CONTACT US</a></p>
+  </footer>
+</html>
